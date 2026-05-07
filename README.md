@@ -26,7 +26,7 @@ Values are reported as <b>mean ± standard deviation</b> across cross‑validati
 ## Overview
 
 This work addresses the following question: <br>
-> Does combining spectral and acoustic parameters improve the discrimination of healthy speakers (HE), speakers with physiological laryngeal > > pathologies (PhLP), and speakers with unilateral vocal fold paralysis (UvfP)?
+> Does combining spectral and acoustic parameters improve the discrimination of healthy speakers (HE), speakers with physiological laryngeal pathologies (PhLP), and speakers with unilateral vocal fold paralysis (UvfP)?
 
 Four classification tasks are addressed: three One vs. One binary and one 3-class, each performed with acoustic features only, spectral features only, and their combination.
 
@@ -70,7 +70,7 @@ Across all tasks, <b>combining acoustic and spectral parameters consistently yie
 
 This repository re-implements the methodology and experimental results presented in:
 
-- Rodrigues et al., *HCist 2024*: [Full paper (PDF)](article/Rodrigues_et_al_HCist2024.pdf)
+- Rodrigues et al., *HCist 2024*: [Full paper (PDF)](paper/Rodrigues_et_al_HCist2024.pdf)
 
 ---
 
@@ -165,7 +165,7 @@ The MEEI database is widely used in the literature, but presents known methodolo
 - Classifier: SVM with RBF kernel (Scikit-learn defaults)
 - Scaling: StandardScaler fitted on training data, applied separately to train and test
 - Validation: Stratified 5-fold cross-validation, 1000 iterations with unique random states
-- - Metric: Accuracy reported as mean ± standard deviation across iterations
+- Metric: Accuracy reported as mean ± standard deviation across iterations
 
 ### Note on Terminology
 The spectral features extracted are **filterbank magnitudes**, not energies, despite the terminology used in the published article. This reflects an evolution of the codebase during the research; the results were obtained using magnitudes, as implemented here.
