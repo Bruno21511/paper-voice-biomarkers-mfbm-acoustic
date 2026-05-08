@@ -34,9 +34,9 @@ Four classification tasks are addressed: three One vs. One binary and one 3-clas
 
 | Method     | HE vs PhLP       | HE vs UVFP       | PhLP vs UVFP     | 3-Class          |
 |------------|------------------|------------------|------------------|------------------|
-| Acoustic   | 84.81 ± 0.90     | 90.70 ± 0.65     | 68.58 ± 1.20     | 66.86 ± 1.02     |
-| Spectral   | 86.46 ± 2.31     | 86.49 ± 1.88     | 67.91 ± 2.42     | 67.06 ± 2.19     |
-| Combined   | 94.49 ± 1.06     | 93.13 ± 0.57     | 72.67 ± 1.70     | 74.59 ± 1.47     |
+| Acoustic   | 85.35 ± 1.03     | 90.71 ± 0.85     | 69.43 ± 1.30     | 67.63 ± 1.12     |
+| Spectral   | 86.46 ± 2.28     | 86.41 ± 1.84     | 67.85 ± 2.42     | 67.01 ± 2.20     |
+| Combined   | 94.48 ± 1.06     | 93.17 ± 0.57     | 72.83 ± 1.70     | 74.67 ± 1.50     |
 
 The figure below shows a bar plot summarizing the accuracies of all 12 experimental conditions (four tasks × three feature sets).
 
@@ -48,9 +48,9 @@ These results are derived directly from the 3‑class confusion matrices, enabli
 
 | Method     | HE vs All        | PhLP vs All      | UVFP vs All      |
 |------------|------------------|------------------|------------------|
-| Acoustic   | 88.25 ± 0.55     | 69.51 ± 1.03     | 75.97 ± 0.90     |
-| Spectral   | 87.97 ± 1.08     | 72.89 ± 2.11     | 73.26 ± 2.03     |
-| Combined   | 92.96 ± 0.64     | 77.46 ± 1.53     | 78.76 ± 1.33     |
+| Acoustic   | 88.36 ± 0.64     | 70.32 ± 1.13     | 76.59 ± 0.94     |
+| Spectral   | 88.02 ± 1.09     | 72.81 ± 2.11     | 73.20 ± 2.04     |
+| Combined   | 92.91 ± 0.67     | 77.56 ± 1.58     | 78.86 ± 1.36     |
 
 ### 3. Binary and 3-class classification AUC (area Under the Curve)
 
@@ -58,9 +58,9 @@ AUC scores provide a threshold-independent measure of  of discriminative perform
 
 | Method     | HE vs PhLP | HE vs UVFP | PhLP vs UVFP |
 |------------|------------|------------|--------------|
-| Acoustic   | 0.9078     | 0.9614     | 0.7484       |
-| Spectral   | 0.9293     | 0.9335     | 0.7141       |
-| Combined   | 0.9648     | 0.9793     | 0.7675       |
+| Acoustic   | 0.9048     | 0.9613     | 0.7541       |
+| Spectral   | 0.9290     | 0.9331     | 0.7104       |
+| Combined   | 0.9644     | 0.9792     | 0.7685       |
 
 Across all tasks, <b>combining acoustic and spectral parameters consistently yields the highest performance</b>.
 

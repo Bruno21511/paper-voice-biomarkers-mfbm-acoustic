@@ -118,7 +118,7 @@ def data_loader(
     dataset_name,
     data_root="../data",
     normalize=True,
-    limit_duration=False,
+    trimm_signal=True,
     WS=256,
     k1=1e-3,
     k2_ratio=10
@@ -180,7 +180,7 @@ def data_loader(
     # -----------------------------
     # 6. Optional trimming
     # -----------------------------
-    if limit_duration:
+    if trimm_signal:
         df["signal"] = [
             _limit_audio(x, WS=WS, k1=k1, k2m=k2_ratio)
             for x in df["signal"].values
