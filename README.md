@@ -118,7 +118,7 @@ This repository re-implements the methodology and experimental results presented
 
 ### Audio Corpus (MEEI)
 
-The audio signals used in this work are a subset of the **Massachusetts Eye and Ear Infirmary (MEEI)** Voice Disorders Database, commercialised by Kay Elemetrics Corp. The subset used in this implementation closely follows the one used in [1][2] (see Note on Results below). 
+The audio signals used in this work are a subset of the **Massachusetts Eye and Ear Infirmary (MEEI)** Voice Disorders Database, commercialised by Kay Elemetrics Corp. The subset used in this implementation closely follows the one used in [1][2] (see Note on Dataset below). 
 
 | Class | Description | N |
 |-------|-------------|---|
@@ -131,11 +131,10 @@ Signals contain the sustained vowel /a/, sampled at 25 kHz, 16-bit PCM encoding.
 
 The audio files are **not included** in this repository as the MEEI database is a commercial product.
 
-### Note on the Dataset Used in the Article and in this Implementation
+### Note on Dataset
 
 The original MEEI subset contains 154 recordings. Three subjects were excluded 
-due to failed acoustic feature extraction, reducing the working dataset to 151 — 
-consistent with the original study.
+due to failed acoustic feature extraction, reducing the working dataset to 151, consistent with the original study.
 
 In this implementation, an additional duplicate subject was identified, present in 
 both the Edema and UVFP classes. Both instances were removed, resulting in a final 
